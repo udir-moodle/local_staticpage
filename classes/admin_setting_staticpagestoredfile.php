@@ -32,6 +32,7 @@ namespace local_staticpage;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class admin_setting_staticpagestoredfile extends \admin_setting_configstoredfile {
+
     /**
      * This function renames .htm files to .html (if any files with this extension exist) when the filepicker is saved
      * and calls the parent function to retain its functionality
@@ -51,15 +52,13 @@ class admin_setting_staticpagestoredfile extends \admin_setting_configstoredfile
             return $response;
         }
 
-        $files = $fs->get_area_files(
-            $options['context']->id,
-            $component,
-            $this->filearea,
-            $this->itemid,
-            'sortorder,filepath,filename',
-            false,
-            $now
-        );
+        $files = $fs->get_area_files($options['context']->id,
+                $component,
+                $this->filearea,
+                $this->itemid,
+                'sortorder,filepath,filename',
+                false,
+                $now);
 
         foreach ($files as $file) {
             $existingname = $file->get_filename();

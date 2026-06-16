@@ -4,14 +4,9 @@ moodle-local_staticpage
 Changes
 -------
 
-### v4.5-r4
+### v5.0-r1
 
-* 2025-10-31 - Improvement: Replace the usage of $_SERVER with $FULLME, resolves #77
-
-### v4.5-r3
-
-* 2025-10-15 - Make codechecker happy again
-* 2025-10-15 - Tests: Switch Github actions workflows to reusable workflows by Moodle an Hochschulen e.V.
+* 2025-04-14 - Prepare compatibility for Moodle 5.0.
 
 ### v4.5-r2
 
