@@ -1,0 +1,17 @@
+{
+  "name": "udir-moodle/local_staticpage",
+  "description": "Static Pages — Composer/Packagist mirror of the Moodle plugin local_staticpage, auto-updated from the Moodle plugins directory.",
+  "type": "moodle-local",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://moodle.org/plugins/local_staticpage",
+  "require": {
+    "composer/installers": "~1.0 || ~2.0",
+    "moodle/moodle": "4.5.*"
+  },
+  "extra": {
+    "installer-name": "staticpage",
+    "moodle-composer": {
+      "component": "local_staticpage"
+    }
+  }
+}
